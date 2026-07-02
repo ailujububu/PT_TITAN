@@ -1,0 +1,1 @@
+const elevarBase = (base, expoente) => base ** expoente;

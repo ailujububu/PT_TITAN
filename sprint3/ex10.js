@@ -1,0 +1,1 @@
+const divisivelPorTres = (numero) => numero % 3 === 0;

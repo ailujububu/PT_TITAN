@@ -1,0 +1,1 @@
+const contarNegativos = (vetor) => vetor.filter(n => n < 0).length;
