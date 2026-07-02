@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #fcf4ca;
+    color: #5c5c5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.imc-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(200, 190, 150, 0.3);
+    text-align: center;
+}
+
+header {
+    padding-bottom: 1rem;
+    border-bottom: 2px dashed #f2e3c6;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    color: #f0a8b4;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #8c8c8c;
+}
+
+.input-group input {
+    padding: 0.8rem 1rem;
+    border: 2px solid #f2e3c6;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #5c5c5c;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #f0a8b4;
+    background-color: #fffafb;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    flex: 1;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.btn-calc {
+    background-color: #a8e6cf;
+    box-shadow: 0 4px 10px rgba(168, 230, 207, 0.4);
+}
+
+.btn-clear {
+    background-color: #ffd3b6;
+    box-shadow: 0 4px 10px rgba(255, 211, 182, 0.4);
+}
+
+.btn-back {
+    background-color: #a1c6ea;
+    box-shadow: 0 4px 10px rgba(161, 198, 234, 0.4);
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.hide {
+    display: none !important;
+}
+
+#result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#imc-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+#imc-info {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.good { color: #a8e6cf; }
+.warning { color: #ffd3b6; }
+.danger { color: #ffb7b2; }
