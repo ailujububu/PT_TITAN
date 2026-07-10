@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Baloo 2", ui-rounded, "Nunito", sans-serif;
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+
+  /* Marca / Pokébola */
+  --color-pokeball-black: #323230;
+  --color-pokeball-red: #d54c42;
+  --color-pokeball-white: #ebeaf2;
+
+  --color-cream: #fffef7;
+  --color-yellow-title: #ffcb05;
+  --color-blue-title: #3d7dca;
+
+  /* Escala de cinza */
+  --color-ash-50: #f7f7f7;
+  --color-ash-100: #e8e8e8;
+  --color-ash-200: #cdcdcd;
+  --color-ash-400: #9b9b9b;
+  --color-ash-600: #5d5d5d;
+  --color-ash-800: #373737;
+  --color-ash-900: #232323;
+
+  /* Barras de estatística */
+  --color-stat-red: #fb3b2d;
+  --color-stat-blue: #1c74de;
+
+  /* Badges de tipo (saturadas) */
+  --color-type-grass: #57c101;
+  --color-type-fire: #e06500;
+  --color-type-water: #3c77ff;
+  --color-type-poison: #8d03a3;
+  --color-type-bug: #ada131;
+  --color-type-normal: #868c6c;
+  --color-type-electric: #f0c000;
+  --color-type-ground: #d9982e;
+  --color-type-fairy: #dc7272;
+  --color-type-fighting: #e60000;
+  --color-type-psychic: #fe4da5;
+  --color-type-rock: #5e4f4f;
+  --color-type-ghost: #2c1a7a;
+  --color-type-ice: #009ebe;
+  --color-type-steel: #887777;
+  --color-type-flying: #955cb9;
+  --color-type-dragon: #5b0fbf;
+
+  /* Fundo dos cards por tipo (pastel) */
+  --color-typebg-grass: #4bba93;
+  --color-typebg-fire: #ee9045;
+  --color-typebg-water: #659de3;
+  --color-typebg-poison: #de8cde;
+  --color-typebg-bug: #cac65f;
+  --color-typebg-normal: #9fa991;
+  --color-typebg-electric: #ffe674;
+  --color-typebg-ground: #e6bb7f;
+  --color-typebg-fairy: #ff9f9f;
+  --color-typebg-fighting: #ca6262;
+  --color-typebg-psychic: #ec8cd7;
+  --color-typebg-rock: #969191;
+  --color-typebg-ghost: #8464d1;
+  --color-typebg-ice: #5be9ff;
+  --color-typebg-steel: #c0c4d6;
+  --color-typebg-flying: #b8c6f0;
+  --color-typebg-dragon: #b4a0ff;
+}
+
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  @apply bg-gradient-to-br from-yellow-50 via-amber-50 to-blue-100 text-ash-900 min-h-screen transition-colors duration-300;
+  @apply dark:from-ash-900 dark:via-ash-900 dark:to-ash-800 dark:text-ash-100;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-ash-200 dark:bg-ash-600 rounded-full;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
