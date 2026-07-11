@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Júlia Teixeira - Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="#header" class="logo">JT<span>.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#header">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#footer">Contato</a></li>
+        </ul>
+
+        <button id="menu-btn" class="menu-btn" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-menu hide">
+        <a href="#header">Início</a>
+        <a href="#about">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Projetos</a>
+        <a href="#footer">Contato</a>
+    </div>
+
+    <header id="header" class="header reveal">
+        <div class="header-text">
+            <h1>Olá! Sou <span>Júlia Teixeira</span>,<br>Desenvolvedora Front-end</h1>
+            <p>Estou em formação como desenvolvedora front-end, construindo projetos com HTML, CSS, JavaScript e React enquanto aprendo a transformar interfaces reais a partir de ideias e protótipos.</p>
+            <a href="#projects" class="btn-primary">Ver projetos</a>
+        </div>
+
+        <div class="header-image">
+            <div class="avatar-blob"></div>
+            <img src="img/perfil.jpg" alt="Foto de Júlia Teixeira" class="avatar-circle">
+        </div>
+    </header>
+
+    <section id="about" class="about reveal">
+        <div class="about-left">
+            <h2>Além do código: quem sou eu?</h2>
+            <div class="social-links">
+                <a href="https://github.com/ailujububu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="about-right">
+            <h3>Trainee no programa TITAN</h3>
+            <p>Comecei minha jornada na programação resolvendo exercícios de lógica e evoluí, sprint a sprint, para projetos completos: manipulação de DOM, consumo de APIs e, mais recentemente, aplicações React com componentização, hooks e roteamento.</p>
+            <p>Gosto de traduzir um design pronto (como um layout de Figma) em uma interface funcional, cuidando de detalhes de responsividade, acessibilidade e experiência do usuário ao longo do caminho.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills reveal">
+        <h2>Minha caixinha de ferramentas</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>HTML &amp; CSS</h3>
+                <p>Estruturação semântica e layouts responsivos com Flexbox e Grid.</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Manipulação de DOM, eventos e consumo de APIs com fetch.</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-react"></i>
+                <h3>React</h3>
+                <p>Componentização, hooks, Context API e React Router.</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <h3>Git &amp; GitHub</h3>
+                <p>Versionamento, commits organizados e colaboração via repositórios.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects reveal">
+        <h2>Projetos em destaque</h2>
+
+        <div class="project-card">
+            <div class="project-visual mint">
+                <i class="fa-solid fa-paw"></i>
+            </div>
+            <div class="project-info">
+                <span class="project-tag">React · Tailwind · React Router</span>
+                <h3>Pokédex</h3>
+                <p>Painel dinâmico integrado à PokeAPI, com busca, filtros por tipo, favoritos, modo escuro, comparação entre Pokémon e paginação.</p>
+                <a href="https://github.com/ailujububu/PT_TITAN/tree/main/Desafio_Final" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                    Ver código <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card reverse">
+            <div class="project-visual peach">
+                <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+            <div class="project-info">
+                <span class="project-tag">JavaScript · Fetch API · OpenWeatherMap</span>
+                <h3>Previsão do Tempo</h3>
+                <p>Busca o clima atual por cidade, exibindo temperatura, sensação térmica, umidade e vento, com tratamento de erros amigável.</p>
+                <div class="project-links">
+                    <a href="../../sprint7/index.html" class="btn-secondary">Abrir projeto</a>
+                    <a href="https://github.com/ailujububu/PT_TITAN/tree/main/sprint7" target="_blank" rel="noopener noreferrer" class="btn-secondary outline">
+                        Código <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-visual blue">
+                <i class="fa-solid fa-calculator"></i>
+            </div>
+            <div class="project-info">
+                <span class="project-tag">JavaScript · DOM · Lógica</span>
+                <h3>Calculadora de IMC</h3>
+                <p>Calcula o índice de massa corporal a partir de altura e peso, classificando o resultado com feedback visual.</p>
+                <div class="project-links">
+                    <a href="../CalculadoraIMC/index.html" class="btn-secondary">Abrir projeto</a>
+                    <a href="https://github.com/ailujububu/PT_TITAN/tree/main/sprint5/CalculadoraIMC" target="_blank" rel="noopener noreferrer" class="btn-secondary outline">
+                        Código <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reverse">
+            <div class="project-visual pink">
+                <i class="fa-solid fa-list-check"></i>
+            </div>
+            <div class="project-info">
+                <span class="project-tag">JavaScript · CRUD · LocalStorage</span>
+                <h3>TODO List</h3>
+                <p>Lista de tarefas com adicionar, concluir, editar e remover itens diretamente na interface.</p>
+                <div class="project-links">
+                    <a href="../TODOlist/index.html" class="btn-secondary">Abrir projeto</a>
+                    <a href="https://github.com/ailujububu/PT_TITAN/tree/main/sprint5/TODOlist" target="_blank" rel="noopener noreferrer" class="btn-secondary outline">
+                        Código <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer reveal">
+        <h2>Vamos conversar?</h2>
+        <p>Estou aberta a oportunidades, trocas e feedback sobre meus projetos.</p>
+
+        <div class="footer-contacts">
+            <a href="mailto:jtg.teixeira.83@gmail.com">
+                <i class="fa-solid fa-envelope"></i> jtg.teixeira.83@gmail.com
+            </a>
+            <a href="https://github.com/ailujububu" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i> github.com/ailujububu
+            </a>
+        </div>
+
+        <p class="copyright">© <span id="current-year"></span> Júlia Teixeira. Feito com 💛 durante o programa TITAN.</p>
+    </footer>
+
+</body>
+</html>

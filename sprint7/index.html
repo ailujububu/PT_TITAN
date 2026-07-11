@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo - Sprint 7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <div class="weather-container">
+        <header>
+            <h1>🌤️ Previsão do Tempo</h1>
+        </header>
+
+        <form id="search-form" class="form-control">
+            <input type="text" id="city-input" placeholder="Digite o nome de uma cidade..." autocomplete="off" required>
+            <button type="submit" class="btn-search">🔍</button>
+        </form>
+
+        <p id="message" class="message"></p>
+
+        <div id="weather-card" class="hide">
+            <div class="weather-location">
+                <h2 id="city-name"></h2>
+                <p id="current-date"></p>
+            </div>
+
+            <div class="weather-main">
+                <img id="weather-icon" alt="">
+                <p id="temperature"></p>
+            </div>
+
+            <p id="description" class="description"></p>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="detail-label">Sensação</span>
+                    <span id="feels-like" class="detail-value"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Umidade</span>
+                    <span id="humidity" class="detail-value"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Vento</span>
+                    <span id="wind" class="detail-value"></span>
+                </div>
+            </div>
+
+            <button id="back-btn" type="button" class="btn-back">Nova busca</button>
+        </div>
+    </div>
+</body>
+</html>
